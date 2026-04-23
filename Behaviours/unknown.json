@@ -20,8 +20,8 @@
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 230,
-			"y": 4
+			"x": 489,
+			"y": -141
 		},
 		"LtVEeUa37rDMV9MLguM7t4ButEGvYkXD": {
 			"height": 72,
@@ -40,7 +40,7 @@
 		"YlslW4onIIA4LCtptX3dArwcwQwstkoH": {
 			"height": 90,
 			"title": "Common.relativeMove",
-			"width": 225,
+			"width": 340,
 			"x": 848,
 			"y": 88
 		},
@@ -50,18 +50,14 @@
 			"width": 159,
 			"x": 898,
 			"y": -105
-		},
-		"pVkDkoihLiovT2W1ul431Ka8IIGWUsIa": {
-			"height": 90,
-			"title": "Common.relativeMove",
-			"width": 225,
-			"x": 1040,
-			"y": 144
 		}
 	},
 	"roles": [ {
 		"categories": [],
 		"name": "Role 0"
+	}, {
+		"categories": [],
+		"name": "Role 1"
 	} ],
 	"root": {
 		"children": [ {
@@ -71,7 +67,7 @@
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
-					"value": "x"
+					"value": "wind"
 				}, {
 					"name": "value",
 					"value": "map.Wind()"
@@ -86,7 +82,7 @@
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "msg",
-					"value": "x"
+					"value": "wind"
 				}, {
 					"name": "scriptName",
 					"value": "echo"
@@ -103,22 +99,7 @@
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "dist",
-					"value": "{x = 300, z = 0}"
-				}, {
-					"name": "fight",
-					"value": "false"
-				}, {
-					"name": "scriptName",
-					"value": "Common.relativeMove"
-				} ],
-				"scriptName": "Common.relativeMove"
-			}, {
-				"children": [],
-				"id": "pVkDkoihLiovT2W1ul431Ka8IIGWUsIa",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "dist",
-					"value": "{x = -300, z = 0}"
+					"value": "{x = wind[\"dirX\"]*10, z = wind[\"dirZ\"]*10}"
 				}, {
 					"name": "fight",
 					"value": "false"
