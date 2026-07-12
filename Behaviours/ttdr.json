@@ -1,0 +1,398 @@
+{
+	"additionalNodes": [ {
+		"children": [],
+		"id": "oZUIHvDFtzAwBBFixidmhNOq7Ble2yy4",
+		"nodeType": "wait",
+		"parameters": [ {
+			"name": "time",
+			"value": 17
+		} ]
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"0V8wWK9JvDmIXS8aAhtc2jiKTvKMIl5D": {
+			"height": 92,
+			"title": "nota_tosemi_firstproject.MakeUnitAvailible",
+			"width": 329,
+			"x": 1058,
+			"y": 801
+		},
+		"1Oxg5ZX94NZjZsKxtDj5LShD1G6K7o7H": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 496,
+			"y": 253
+		},
+		"73G9jyU9oxKZEY8OkJjLDsLqessgzF5D": {
+			"height": 92,
+			"title": "store",
+			"width": 131,
+			"x": 478,
+			"y": -208
+		},
+		"8ckrumWnoWlZ4EjcpcLd8F99fPC1TWoa": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 287,
+			"y": 125
+		},
+		"98tcnp7FlQEctADrzWOTba2ofJqKA6pw": {
+			"height": 94,
+			"title": "store",
+			"width": 347,
+			"x": 1050,
+			"y": 356
+		},
+		"9GVmYHa8thvhK1Fd0eCTgLAUxBTZ2xvw": {
+			"height": 94,
+			"title": "store",
+			"width": 388,
+			"x": 1043,
+			"y": 182
+		},
+		"9mlMbw89MUOtdU3sxJMr7hqWrCVoU3pI": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 88,
+			"y": -48
+		},
+		"DMhNnhNxh3B8ZzpMt4ClpTz5skbGdlGc": {
+			"height": 92,
+			"title": "store",
+			"width": 154,
+			"x": 473,
+			"y": -297
+		},
+		"NUcvvNmX2tDPujtCAVafd7hVZ334rXxT": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 732,
+			"y": 285
+		},
+		"Pb1HUvYAOssiJAWyXs5IOg4AtkacHfoA": {
+			"height": 110,
+			"title": "reference",
+			"width": 267,
+			"x": 1250,
+			"y": 24
+		},
+		"VRySC3QbnBUAqHPaQysu8sJBNtok82xn": {
+			"height": 193,
+			"title": "reference",
+			"width": 286,
+			"x": 1051,
+			"y": 580
+		},
+		"WBm21ZagXRDPnTVxTyRbveHMuLxd0rxR": {
+			"height": 94,
+			"title": "store",
+			"width": 244,
+			"x": 475,
+			"y": 77
+		},
+		"Y4QJx2pbZixPROdzaF71MHV3OW64Vant": {
+			"height": 94,
+			"title": "store",
+			"width": 347,
+			"x": 1040,
+			"y": 451
+		},
+		"c418vSXFsBezanT1KoWyd6Y00k3evTI4": {
+			"height": 60,
+			"title": "sequence",
+			"width": 144,
+			"x": 818,
+			"y": 486
+		},
+		"cp3LUFyDSQV9ibGGNTyvAGt73zTclEXk": {
+			"height": 94,
+			"title": "store",
+			"width": 372,
+			"x": 487,
+			"y": -117
+		},
+		"dPTiTy2pB5XmF6edMk4SkW6dS0rvgI14": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 556,
+			"y": 402
+		},
+		"fIjPMzuDDv5Xyk1h1ot33KhgSWLsI5Ju": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 285,
+			"y": -129
+		},
+		"oZUIHvDFtzAwBBFixidmhNOq7Ble2yy4": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1012,
+			"y": 104
+		},
+		"pvU6nWMkliSPinOoHTHllVBaUjM8VUDA": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 730,
+			"y": 393
+		},
+		"vj1VrGruAlW6NHW12K9qjt38WfeIN0CP": {
+			"height": 94,
+			"title": "store",
+			"width": 326,
+			"x": 1030,
+			"y": 273
+		},
+		"zkEhTcw5ACbpHptd44AwKSMwor1GpUkV": {
+			"height": 94,
+			"title": "store",
+			"width": 372,
+			"x": 485,
+			"y": -21
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "DMhNnhNxh3B8ZzpMt4ClpTz5skbGdlGc",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "bb.transports"
+				}, {
+					"name": "value",
+					"value": "{}"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "73G9jyU9oxKZEY8OkJjLDsLqessgzF5D",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "bb.units"
+				}, {
+					"name": "value",
+					"value": "{}"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "fIjPMzuDDv5Xyk1h1ot33KhgSWLsI5Ju",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "cp3LUFyDSQV9ibGGNTyvAGt73zTclEXk",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "atlases"
+				}, {
+					"name": "value",
+					"value": "nota_tosemi_firstproject.ttdrAtlasGroup(units)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "zkEhTcw5ACbpHptd44AwKSMwor1GpUkV",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "helpunits"
+				}, {
+					"name": "value",
+					"value": "nota_tosemi_firstproject.ttdrRescuers(units)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "WBm21ZagXRDPnTVxTyRbveHMuLxd0rxR",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "enemyID"
+				}, {
+					"name": "value",
+					"value": "core.EnemyTeamIDs()[1]"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "Pb1HUvYAOssiJAWyXs5IOg4AtkacHfoA",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_tosemi_firstproject.scout"
+					} ],
+					"referenceInputs": [],
+					"referenceOutputs": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "NUcvvNmX2tDPujtCAVafd7hVZ334rXxT",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 17
+						} ]
+					}, {
+						"children": [ {
+							"children": [ {
+								"children": [],
+								"id": "9GVmYHa8thvhK1Fd0eCTgLAUxBTZ2xvw",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "visibleEnemies"
+								}, {
+									"name": "value",
+									"value": "nota_falcos_helper_ai.getVisibleUnits(enemyID)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "vj1VrGruAlW6NHW12K9qjt38WfeIN0CP",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "visibleEnemyPositions"
+								}, {
+									"name": "value",
+									"value": "ttdrgetGroupPositions(visibleEnemies)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "98tcnp7FlQEctADrzWOTba2ofJqKA6pw",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "savingatlas"
+								}, {
+									"name": "value",
+									"value": "ttdrGetFreeUnitFromTable(bb.transports)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "Y4QJx2pbZixPROdzaF71MHV3OW64Vant",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "savedunit"
+								}, {
+									"name": "value",
+									"value": "ttdrGetFreeUnitFromTable(bb.units)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "VRySC3QbnBUAqHPaQysu8sJBNtok82xn",
+								"nodeType": "reference",
+								"parameters": [ {
+									"name": "behaviourName",
+									"value": "nota_tosemi_firstproject.saveunit"
+								} ],
+								"referenceInputs": [ {
+									"name": "atlas",
+									"value": "atlases[savingatlas]"
+								}, {
+									"name": "unit",
+									"value": "helpunits[savedunit]"
+								}, {
+									"name": "enemies",
+									"value": "visibleEnemyPositions"
+								} ],
+								"referenceOutputs": []
+							}, {
+								"children": [],
+								"id": "0V8wWK9JvDmIXS8aAhtc2jiKTvKMIl5D",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "table",
+									"value": "bb.transports"
+								}, {
+									"name": "usedUnitIndex",
+									"value": "savingatlas"
+								}, {
+									"name": "scriptName",
+									"value": "nota_tosemi_firstproject.MakeUnitAvailible"
+								} ],
+								"scriptName": "nota_tosemi_firstproject.MakeUnitAvailible"
+							} ],
+							"id": "c418vSXFsBezanT1KoWyd6Y00k3evTI4",
+							"nodeType": "sequence",
+							"parameters": []
+						} ],
+						"id": "pvU6nWMkliSPinOoHTHllVBaUjM8VUDA",
+						"nodeType": "repeat",
+						"parameters": []
+					} ],
+					"id": "dPTiTy2pB5XmF6edMk4SkW6dS0rvgI14",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "1Oxg5ZX94NZjZsKxtDj5LShD1G6K7o7H",
+				"nodeType": "parallel",
+				"parameters": [ {
+					"name": "mode",
+					"value": "all-success"
+				} ]
+			} ],
+			"id": "8ckrumWnoWlZ4EjcpcLd8F99fPC1TWoa",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "9mlMbw89MUOtdU3sxJMr7hqWrCVoU3pI",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

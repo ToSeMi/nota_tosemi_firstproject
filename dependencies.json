@@ -1,0 +1,9 @@
+{
+	"core": "0.8.x",
+	"map": "0.5.x",
+    "nota_common" : "0.3.x",
+    "formation" : "0.3.4",
+    "nota_idefix_ctp2": "2022-05-07",
+    "nota_naimad1_ttdr2" : "0.1",
+    "nota_falcos_helper_ai" : "1.2.0"
+}

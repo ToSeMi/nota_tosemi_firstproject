@@ -1,0 +1,193 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_UNIT",
+		"name": "atlas"
+	}, {
+		"command": "BETS_UNIT",
+		"name": "unit"
+	}, {
+		"command": "Variable",
+		"name": "enemies"
+	} ],
+	"outputs": [],
+	"properties": {
+		"BhSFUEu6mf2zeYsOaJUa6p0GUKanZThf": {
+			"height": 94,
+			"title": "nota_naimad1_ttdr2.moveUnitViaPath",
+			"width": 332,
+			"x": 576,
+			"y": 28
+		},
+		"GCGHXOsmZLbd07pCjhMVCplzgOi35RSl": {
+			"height": 92,
+			"title": "nota_tosemi_firstproject.LoadUnitByAtlas",
+			"width": 321,
+			"x": 578,
+			"y": 124
+		},
+		"IkfvmzgGO6jz9LiERHvCAi81NoAvGB3Z": {
+			"height": 114,
+			"title": "nota_tosemi_firstproject.UnloadUnitByAtlas",
+			"width": 334,
+			"x": 511,
+			"y": 346
+		},
+		"cbrDC40Bq4aXlhzRzQ0LLdg4NZx6rVBE": {
+			"height": 94,
+			"title": "store",
+			"width": 371,
+			"x": 551,
+			"y": -301
+		},
+		"fihvqcOcKfM1oF85R8LwW68xgopBoPST": {
+			"height": 94,
+			"title": "store",
+			"width": 645,
+			"x": 531,
+			"y": -118
+		},
+		"g25SeUZT14ms2PRVtp7nYT8g59tbXLRX": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 282,
+			"y": -23
+		},
+		"ojXKZtD70X3i4iqIb56h9KybfCYwmOXd": {
+			"height": 94,
+			"title": "nota_naimad1_ttdr2.moveUnitViaPath",
+			"width": 332,
+			"x": 559,
+			"y": 245
+		},
+		"wNONA4nG2Pbf7AKE425FhknIokZ3NTXi": {
+			"height": 72,
+			"title": "echo",
+			"width": 148,
+			"x": 631,
+			"y": -208
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "cbrDC40Bq4aXlhzRzQ0LLdg4NZx6rVBE",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "safePoints"
+			}, {
+				"name": "value",
+				"value": "nota_naimad1_ttdr2.GetSafePoints(enemies)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "wNONA4nG2Pbf7AKE425FhknIokZ3NTXi",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "msg",
+				"value": "\"i am here\""
+			}, {
+				"name": "scriptName",
+				"value": "echo"
+			} ],
+			"scriptName": "echo"
+		}, {
+			"children": [],
+			"id": "fihvqcOcKfM1oF85R8LwW68xgopBoPST",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "path"
+			}, {
+				"name": "value",
+				"value": "nota_naimad1_ttdr2.planRescuePath(unit,safePoints)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "BhSFUEu6mf2zeYsOaJUa6p0GUKanZThf",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unitID",
+				"value": "atlas"
+			}, {
+				"name": "path",
+				"value": "nota_naimad1_ttdr2.reverseTable(path)"
+			}, {
+				"name": "scriptName",
+				"value": "nota_naimad1_ttdr2.moveUnitViaPath"
+			} ],
+			"scriptName": "nota_naimad1_ttdr2.moveUnitViaPath"
+		}, {
+			"children": [],
+			"id": "GCGHXOsmZLbd07pCjhMVCplzgOi35RSl",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "chosenAtlas",
+				"value": "atlas"
+			}, {
+				"name": "selectedUnit",
+				"value": "unit"
+			}, {
+				"name": "scriptName",
+				"value": "nota_tosemi_firstproject.LoadUnitByAtlas"
+			} ],
+			"scriptName": "nota_tosemi_firstproject.LoadUnitByAtlas"
+		}, {
+			"children": [],
+			"id": "ojXKZtD70X3i4iqIb56h9KybfCYwmOXd",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unitID",
+				"value": "atlas"
+			}, {
+				"name": "path",
+				"value": "path"
+			}, {
+				"name": "scriptName",
+				"value": "nota_naimad1_ttdr2.moveUnitViaPath"
+			} ],
+			"scriptName": "nota_naimad1_ttdr2.moveUnitViaPath"
+		}, {
+			"children": [],
+			"id": "IkfvmzgGO6jz9LiERHvCAi81NoAvGB3Z",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "chosenAtlas",
+				"value": "atlas"
+			}, {
+				"name": "selectedUnit",
+				"value": "unit"
+			}, {
+				"name": "wantedPosition",
+				"value": "core.missionInfo()[\"area\"]"
+			}, {
+				"name": "scriptName",
+				"value": "nota_tosemi_firstproject.UnloadUnitByAtlas"
+			} ],
+			"scriptName": "nota_tosemi_firstproject.UnloadUnitByAtlas"
+		} ],
+		"id": "g25SeUZT14ms2PRVtp7nYT8g59tbXLRX",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

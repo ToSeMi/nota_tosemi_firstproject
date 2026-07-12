@@ -1,0 +1,37 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"jlCz9e2GcC0Vq9LAgUlwdUxZGHYXWzWs": {
+			"height": 74,
+			"title": "echo",
+			"width": 192,
+			"x": 357,
+			"y": -13
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [],
+		"id": "jlCz9e2GcC0Vq9LAgUlwdUxZGHYXWzWs",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "msg",
+			"value": "core.missionInfo()"
+		}, {
+			"name": "scriptName",
+			"value": "echo"
+		} ],
+		"scriptName": "echo"
+	}
+}

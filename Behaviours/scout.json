@@ -1,0 +1,96 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"6J8sP6AEi2MftgQqzoRTqNOWNAaWBx0e": {
+			"height": 94,
+			"title": "store",
+			"width": 469,
+			"x": 643,
+			"y": -243
+		},
+		"C1tiwEBNuISiRDpVkmBPCvMHE6Uip0GE": {
+			"height": 92,
+			"title": "nota_tosemi_firstproject.MoveGroupMembersToPositions",
+			"width": 426,
+			"x": 633,
+			"y": 10
+		},
+		"EDLtyjzsLpIwg9BYbPUC8Lojp79EsjWG": {
+			"height": 94,
+			"title": "store",
+			"width": 467,
+			"x": 648,
+			"y": -144
+		},
+		"NbG9wUu56RK9rjlg97hiaTBGYNU2Tlo9": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 310,
+			"y": -14
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "6J8sP6AEi2MftgQqzoRTqNOWNAaWBx0e",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "peepers"
+			}, {
+				"name": "value",
+				"value": "nota_tosemi_firstproject.ttdrpeeperGroupDefinition(units)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "EDLtyjzsLpIwg9BYbPUC8Lojp79EsjWG",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "positions"
+			}, {
+				"name": "value",
+				"value": "nota_naimad1_ttdr2.generatePositionsForPeepers(peepers)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "C1tiwEBNuISiRDpVkmBPCvMHE6Uip0GE",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "group",
+				"value": "peepers"
+			}, {
+				"name": "positions",
+				"value": "positions"
+			}, {
+				"name": "scriptName",
+				"value": "nota_tosemi_firstproject.MoveGroupMembersToPositions"
+			} ],
+			"scriptName": "nota_tosemi_firstproject.MoveGroupMembersToPositions"
+		} ],
+		"id": "NbG9wUu56RK9rjlg97hiaTBGYNU2Tlo9",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
