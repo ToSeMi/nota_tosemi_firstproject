@@ -9,7 +9,7 @@ end
 -- speedups
 local SpringGetUnitPosition = Spring.GetUnitPosition
 
--- @description return group definition of the attack group
+-- @description return static position of the first unit
 return function(listOfUnits)
     local groupDefinition = {}
     local counter = 1
@@ -17,16 +17,12 @@ return function(listOfUnits)
         local unitID = listOfUnits[i]
         local unitDefID = Spring.GetUnitDefID(unitID)
         local unitDefName = UnitDefs[unitDefID].name
-        if unitDefName ~= "armpw" then
-            if unitDefName ~= "armthovr" then
-                groupDefinition[unitID] = counter
-                counter = counter + 1
+        if unitDefName == "armfark" then
             
-            end
-        end
-        --groupDefinition[unitID] = counter
+            groupDefinition[counter] = unitID
+            counter = counter + 1
         --groupDefinition[listOfUnits[i]] = i
-    
+        end
     end
     return groupDefinition
 end

@@ -9,10 +9,12 @@ end
 -- speedups
 local SpringGetUnitPosition = Spring.GetUnitPosition
 
--- @description return group definition of peewees
-return function(listOfEnemyIndicies)
-    local enemyPositions = {}
-    for i = 1,#listOfEnemyIndicies do
-        local x,y,z = SpringGetUnitPosition(listOfEnemyIndicies[i])
+-- @description return get the list of the visible units
+return function(listOfEnemies, teamID)
+    local visibleEnemies = Spring.GetVisibleUnits(teamID)
+    for i = 1, #visibleEnemies do
+            local x,y,z=SpringGetUnitPosition(visibleEnemies[i])
+            listOfEnemies[visibleEnemies[i]] = Vec3(x,y,z)
     end
+    return listOfEnemies
 end

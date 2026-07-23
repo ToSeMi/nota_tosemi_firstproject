@@ -13,106 +13,127 @@
 			"height": 132,
 			"title": "formation.moveCustomGroup",
 			"width": 380,
-			"x": 1149,
+			"x": 1145,
 			"y": -203
+		},
+		"AvxLjSyXpyue4V1VNuXQQEQFU3uqYLVI": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 1031,
+			"y": 669
 		},
 		"FwqY2zp2YEYYgjKchajxofQPaJidUmnI": {
 			"height": 132,
 			"title": "formation.moveCustomGroup",
 			"width": 380,
-			"x": 1243,
+			"x": 1239,
 			"y": 6
+		},
+		"Lh0aAvm3oVzMCAe7WI7QbWE1zYdPgA2m": {
+			"height": 94,
+			"title": "store",
+			"width": 279,
+			"x": 1232,
+			"y": 458
 		},
 		"LvZ0jGq2T0GP1HMWEj3T51ngJGiH6HoB": {
 			"height": 94,
 			"title": "store",
 			"width": 466,
-			"x": 1140,
+			"x": 1136,
 			"y": -295
 		},
 		"On7Sigj5pAEddu9sb7jTwCPLkSSs2r0c": {
 			"height": 94,
 			"title": "store",
 			"width": 466,
-			"x": 1230,
+			"x": 1226,
 			"y": 151
 		},
 		"SgItkjtHohVZv24RnheChO9dLDUFh3CT": {
 			"height": 132,
 			"title": "formation.moveCustomGroup",
 			"width": 471,
-			"x": 1210,
-			"y": 423
+			"x": 1242,
+			"y": 705
 		},
 		"Vo0HSKZNPL87Bmedb3PwkMX1PJMwplCB": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 830,
+			"x": 827,
 			"y": 83
 		},
 		"Y05C6znNhtBx0oGKvnxLzbe0M0QLgRtH": {
 			"height": 94,
 			"title": "store",
 			"width": 454,
-			"x": 494,
-			"y": -28
+			"x": 442,
+			"y": -118
 		},
 		"YmEJ1EzhMB1bupUYwQ49Mgqsb9xGbTmb": {
 			"height": 132,
 			"title": "formation.moveCustomGroup",
 			"width": 380,
-			"x": 1242,
+			"x": 1238,
 			"y": 273
 		},
 		"bvVDWjUCq4LXJqDz8qXR9gs28ZgAxljM": {
 			"height": 94,
 			"title": "store",
 			"width": 466,
-			"x": 1223,
+			"x": 1219,
 			"y": -84
 		},
 		"dgucNSg7tbBCdrv5zxvQXroYpNBDG3QF": {
 			"height": 94,
 			"title": "store",
 			"width": 379,
-			"x": 454,
+			"x": 451,
 			"y": -304
+		},
+		"gmbohNXZ7kxUBmq76sq5Skl1Zlblr3Vl": {
+			"height": 132,
+			"title": "formation.moveCustomGroup",
+			"width": 306,
+			"x": 1301,
+			"y": 559
 		},
 		"iVn47oqFHzIFe2AdlPr56i9kXLj0L5Ho": {
 			"height": 54,
 			"title": "nota_common.manualMissionEnd",
 			"width": 296,
-			"x": 674,
-			"y": 410
+			"x": 504,
+			"y": 635
 		},
 		"rMoJyUURgpZm7VwDgRay5ah9Hx9z1ICZ": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 228,
+			"x": 226,
 			"y": 17
 		},
 		"reqj0OlJAvcBYAAh7E2QauRO2xs0kruD": {
 			"height": 94,
 			"title": "store",
 			"width": 332,
-			"x": 453,
+			"x": 450,
 			"y": -216
 		},
 		"xnq6z7AkKL1BloX8sZdEHRZN6uoXJyzF": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 514,
+			"x": 511,
 			"y": 178
 		},
 		"zRRJFVijrtQBlCpsFrda7xSlR0RRfjBh": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 840,
-			"y": 295
+			"x": 831,
+			"y": 380
 		}
 	},
 	"roles": [ {
@@ -285,25 +306,69 @@
 			}, {
 				"children": [ {
 					"children": [],
-					"id": "SgItkjtHohVZv24RnheChO9dLDUFh3CT",
+					"id": "Lh0aAvm3oVzMCAe7WI7QbWE1zYdPgA2m",
 					"nodeType": "luaCommand",
 					"parameters": [ {
-						"name": "groupDefintion",
-						"value": "atgroup"
+						"name": "var",
+						"value": "bear"
 					}, {
-						"name": "position",
-						"value": "Vec3(hills[4][\"x\"] - 2,192,hills[4][\"z\"]- 2)"
-					}, {
-						"name": "formation",
-						"value": "{Vec3(5,0,0), Vec3(0,0,0), Vec3(-5,0,0),Vec3(-7,0,0)}"
-					}, {
-						"name": "fight",
-						"value": "true"
+						"name": "value",
+						"value": "ctp2bearGroupDefinition(units)"
 					}, {
 						"name": "scriptName",
-						"value": "formation.moveCustomGroup"
+						"value": "store"
 					} ],
-					"scriptName": "formation.moveCustomGroup"
+					"scriptName": "store"
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "gmbohNXZ7kxUBmq76sq5Skl1Zlblr3Vl",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "groupDefintion",
+							"value": "bear"
+						}, {
+							"name": "position",
+							"value": "Vec3(hills[4][\"x\"],192,hills[4][\"z\"])"
+						}, {
+							"name": "formation",
+							"value": "{Vec3(0,0,0)}"
+						}, {
+							"name": "fight",
+							"value": "false"
+						}, {
+							"name": "scriptName",
+							"value": "formation.moveCustomGroup"
+						} ],
+						"scriptName": "formation.moveCustomGroup"
+					}, {
+						"children": [],
+						"id": "SgItkjtHohVZv24RnheChO9dLDUFh3CT",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "groupDefintion",
+							"value": "atgroup"
+						}, {
+							"name": "position",
+							"value": "Vec3(hills[4][\"x\"],192,hills[4][\"z\"])"
+						}, {
+							"name": "formation",
+							"value": "{Vec3(0,0,0), Vec3(0,0,32), Vec3(0,0,-32),Vec3(0,0,64)}"
+						}, {
+							"name": "fight",
+							"value": "false"
+						}, {
+							"name": "scriptName",
+							"value": "formation.moveCustomGroup"
+						} ],
+						"scriptName": "formation.moveCustomGroup"
+					} ],
+					"id": "AvxLjSyXpyue4V1VNuXQQEQFU3uqYLVI",
+					"nodeType": "parallel",
+					"parameters": [ {
+						"name": "mode",
+						"value": "all-success"
+					} ]
 				} ],
 				"id": "zRRJFVijrtQBlCpsFrda7xSlR0RRfjBh",
 				"nodeType": "sequence",

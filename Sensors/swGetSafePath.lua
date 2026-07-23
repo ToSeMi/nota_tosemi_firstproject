@@ -10,12 +10,14 @@ end
 local SpringGetUnitPosition = Spring.GetUnitPosition
 
 -- @description return static position of the first unit
-return function(featureList)
-    local visibleFeatures = Spring.GetVisibleFeatures()
-    for i = 1, #visibleFeatures do
-        if featureList[visibleFeatures[i]] == nil then
-            featureList[i] = visibleFeatures[i]
+return function(pathPoints)
+    local previous = nil
+    for i=1,#pathPoints do
+        local corridorPoint = pathPoints[i]
+        if corridorPoint.ownerAllyID ~= 0 then
+            break
         end
+        previous = corridorPoint
     end
-    return featureList 
+    return previous
 end

@@ -1,0 +1,58 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 128,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "atlasID"
+	}, {
+		"command": "Variable",
+		"name": "objectID"
+	} ],
+	"outputs": [],
+	"properties": {
+		"WaSAlZiZq4fRjyhrtYvswtifcgMfFIVV": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 265,
+			"y": 25
+		},
+		"vYHouNirHpOtMPS5XScfBXjyIumJlYhr": {
+			"height": 92,
+			"title": "nota_tosemi_firstproject.LoadUnitByAtlas",
+			"width": 321,
+			"x": 434,
+			"y": -126
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "vYHouNirHpOtMPS5XScfBXjyIumJlYhr",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "chosenAtlas",
+				"value": ""
+			}, {
+				"name": "selectedUnit",
+				"value": ""
+			}, {
+				"name": "scriptName",
+				"value": "nota_tosemi_firstproject.LoadUnitByAtlas"
+			} ],
+			"scriptName": "nota_tosemi_firstproject.LoadUnitByAtlas"
+		} ],
+		"id": "WaSAlZiZq4fRjyhrtYvswtifcgMfFIVV",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

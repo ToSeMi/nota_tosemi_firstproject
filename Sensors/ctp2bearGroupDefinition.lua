@@ -18,10 +18,9 @@ return function(listOfUnits)
         local unitDefID = Spring.GetUnitDefID(unitID)
         local unitDefName = UnitDefs[unitDefID].name
         if unitDefName ~= "armpw" then
-            if unitDefName ~= "armthovr" then
+            if unitDefName == "armthovr" then
                 groupDefinition[unitID] = counter
                 counter = counter + 1
-            
             end
         end
         --groupDefinition[unitID] = counter

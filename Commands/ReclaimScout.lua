@@ -9,6 +9,13 @@ function getInfo()
 				componentType = "editBox",
 				defaultValue = "",
 			},
+			-- @parameter chosenAtlas unitId - mapping unitID => positionIndex
+			--[[ local example = {
+				[14945] = 1,
+				[5814] = 2,
+				[126450] = 3,
+			}
+			]]--
 			{ 
 				name = "metalID",
 				variableType = "expression",
@@ -32,8 +39,12 @@ function Run(self, units, parameter)
         return FAILURE
     end
     if not Spring.ValidFeatureID(metalID) then
-        return SUCCESS
+        return FAILURE
     end
+    
+	if Spring.GetUnitTransporter(unit) ~= nil then
+		return SUCCESS
+	end	
 	
 	-- first time
 	if not self.initialized then

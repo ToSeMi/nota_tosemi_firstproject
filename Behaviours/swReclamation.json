@@ -1,0 +1,171 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 168,
+			"width": 218
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "enemyID"
+	}, {
+		"command": "Variable",
+		"name": "radius"
+	}, {
+		"command": "Variable",
+		"name": "threshold"
+	}, {
+		"command": "Variable",
+		"name": "focusPoint"
+	} ],
+	"outputs": [],
+	"properties": {
+		"96QuCHnZDFXkwxTCB1vFhMIEOiXqW30W": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 347,
+			"x": 1136,
+			"y": 205
+		},
+		"DoRzGuyvZVxa5wfLoOAQPvkMRalyXs92": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 439,
+			"y": 100
+		},
+		"FjTsXOSgAbYl0eNg4t8eXsvBgBiySVrl": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 253,
+			"y": 17
+		},
+		"Hqe0eYPs5KnkxInvZFAFheiQRPCtUTBj": {
+			"height": 92,
+			"title": "nota_tosemi_firstproject.ReclaimMetalArea",
+			"width": 333,
+			"x": 704,
+			"y": 13
+		},
+		"Zj2xjSOE1ehLJcnpih6sLEejz49jwDeQ": {
+			"height": 94,
+			"title": "store",
+			"width": 314,
+			"x": 456,
+			"y": -140
+		},
+		"b67B8oqH0nHQohYJCKKUumQKJVyKdgoW": {
+			"height": 60,
+			"title": "repeat - check for enemies",
+			"width": 251,
+			"x": 683,
+			"y": 218
+		},
+		"nr0lvipnz9nQeqUy0FPbhNf2gig61ocx": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 974,
+			"y": 218
+		},
+		"wBShpDN4BFPTxRkrzvfmCsneFr6SvmgC": {
+			"height": 133,
+			"title": "formation.moveCustomGroup",
+			"width": 306,
+			"x": 1514,
+			"y": 213
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "Zj2xjSOE1ehLJcnpih6sLEejz49jwDeQ",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "fark"
+			}, {
+				"name": "value",
+				"value": "ttdrGetFreeUnitFromTable(bb.farks)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "Hqe0eYPs5KnkxInvZFAFheiQRPCtUTBj",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "scraperID",
+					"value": "fark"
+				}, {
+					"name": "radius",
+					"value": "100"
+				}, {
+					"name": "scriptName",
+					"value": "nota_tosemi_firstproject.ReclaimMetalArea"
+				} ],
+				"scriptName": "nota_tosemi_firstproject.ReclaimMetalArea"
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "wBShpDN4BFPTxRkrzvfmCsneFr6SvmgC",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "groupDefintion",
+								"value": ""
+							}, {
+								"name": "position",
+								"value": "focusPoint"
+							}, {
+								"name": "formation",
+								"value": "<relative formation>"
+							}, {
+								"name": "fight",
+								"value": "false"
+							}, {
+								"name": "scriptName",
+								"value": "formation.moveCustomGroup"
+							} ],
+							"scriptName": "formation.moveCustomGroup"
+						} ],
+						"id": "96QuCHnZDFXkwxTCB1vFhMIEOiXqW30W",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "swAreEnemiesClose(enemyID,radius,threshold)"
+						}, {
+							"name": "repeat",
+							"value": "false"
+						} ]
+					} ],
+					"id": "nr0lvipnz9nQeqUy0FPbhNf2gig61ocx",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "b67B8oqH0nHQohYJCKKUumQKJVyKdgoW",
+				"nodeType": "repeat",
+				"parameters": []
+			} ],
+			"id": "DoRzGuyvZVxa5wfLoOAQPvkMRalyXs92",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "FjTsXOSgAbYl0eNg4t8eXsvBgBiySVrl",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

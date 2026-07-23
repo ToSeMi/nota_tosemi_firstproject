@@ -9,8 +9,8 @@ function getInfo()
 				componentType = "editBox",
 				defaultValue = "",
 			},
-			{ 
-				name = "metalID",
+            { 
+				name = "radius",
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
@@ -26,18 +26,16 @@ local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
 
 function Run(self, units, parameter)
 	local scraperID = parameter.scraperID -- number
-	local metalID = parameter.metalID -- number
-    
+	local radius = parameter.radius
+
 	if not Spring.ValidUnitID(scraperID) then
         return FAILURE
     end
-    if not Spring.ValidFeatureID(metalID) then
-        return SUCCESS
-    end
-	
+    
 	-- first time
 	if not self.initialized then
-		Spring.GiveOrderToUnit(atlas, CMD.RECLAIM,{metalID},{"shift"})
+        local x,y,z = SpringGetUnitPosition(metalID)
+		Spring.GiveOrderToUnit(atlas, CMD.RECLAIM,{x,y,z, radius},{"shift"})
 		self.initialized = true
 	end
 	
